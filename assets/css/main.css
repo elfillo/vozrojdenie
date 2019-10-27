@@ -1850,3 +1850,7 @@ span.red {
   margin: 0 auto;
   width: 100%;
 }
+
+.owl-carousel .owl-item img{
+  height: auto !important;
+}
