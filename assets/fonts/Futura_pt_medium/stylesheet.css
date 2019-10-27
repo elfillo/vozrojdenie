@@ -1,0 +1,9 @@
+@font-face {
+font-family: 'Futura PT Medium';
+src: url('https://raw.githubusercontent.com/TheRelow/plumb/master/fonts/Futura_pt_medium/FuturaPT-Medium.eot');
+src: url('https://raw.githubusercontent.com/TheRelow/plumb/master/fonts/Futura_pt_medium/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+url('https://raw.githubusercontent.com/TheRelow/plumb/master/fonts/Futura_pt_medium/FuturaPT-Medium.woff') format('woff'),
+url('https://raw.githubusercontent.com/TheRelow/plumb/master/fonts/Futura_pt_medium/FuturaPT-Medium.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}

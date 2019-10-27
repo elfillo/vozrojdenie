@@ -1,0 +1,14 @@
+@font-face {
+font-family: 'Roller';
+src: url("BBRollerMonoProST-Regular.ttf") format("opentype");
+}
+
+@font-face {
+font-family: 'Roller-bold';
+src: url("BBRollerMonoProST-Bold.ttf") format("opentype");
+}
+
+@font-face {
+font-family: 'molot';
+src: url("molot.otf") format("opentype");
+}
