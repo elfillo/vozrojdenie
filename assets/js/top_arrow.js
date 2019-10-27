@@ -12,11 +12,3 @@ $(document).ready(function () {
             scrollTop: 0
     }, 1500);
 });
-$(document).ready(function (){
-  console.log('ready?');
-    var windowsize = $(window).width();
-    console.log(windowsize);
-    setTimeout(function () {
-        $('.swiper-slide').css({'width': windowsize, 'transform': 'translate(25%)'});
-    }, 2000);
-});
