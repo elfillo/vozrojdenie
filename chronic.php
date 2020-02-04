@@ -9,11 +9,13 @@ Template Name: Хроника событий
 $link = $_SERVER['REQUEST_URI'];
 $activeTag = explode('/', $link)[2];
 $tags = get_tags(['order' => 'DESC']);
+$first_tag = array_shift($tags);
 ?>
     <div class="wrapper vertical">
         <div class="choose">
+            <a href="<?php echo get_tag_link($first_tag->term_id)?>" class="item active"><?php echo $first_tag->name?></a>
             <?php foreach ($tags as $tag):?>
-                <a href="<?php echo get_tag_link($tag->term_id)?>" class="item <?php echo '2018' == $tag->name ? 'active' : ''?>"><?php echo $tag->name?></a>
+                <a href="<?php echo get_tag_link($tag->term_id)?>" class="item"><?php echo $tag->name?></a>
             <?php endforeach;?>
         </div>
 
@@ -22,7 +24,7 @@ $tags = get_tags(['order' => 'DESC']);
             $posts = get_posts( array(
                 'numberposts' => -1,
                 'post_type'   => 'post_chronic',
-                'tag'         => '2018',
+                'tag'         => $first_tag->slug,
             ) );
             foreach( $posts as $post ){ setup_postdata($post); ?>
                 <div class="item">
