@@ -23,8 +23,8 @@
         wp_enqueue_script('jquery', get_template_directory_uri() .'/assets/js/jquery-3.2.1.min.js', null, true);
         wp_enqueue_script( 'menu', get_template_directory_uri() . '/assets/js/menu.js', array('jquery'), null, true);
         wp_enqueue_script('top_arrow', get_template_directory_uri() .'/assets/js/top_arrow.js', array('jquery'), null, true);
-        wp_enqueue_script('swiper-c', get_template_directory_uri() .'/assets/js/libs.min.js', array('jquery'), null, true);
-        wp_enqueue_script('swiper-c-main', get_template_directory_uri() .'/assets/js/swiper-main.js', array('swiper-c'), null, true);
+        // wp_enqueue_script('swiper-c', get_template_directory_uri() .'/assets/js/libs.min.js', array('jquery'), null, true);
+        // wp_enqueue_script('swiper-c-main', get_template_directory_uri() .'/assets/js/swiper-main.js', array('swiper-c'), null, true);
 	}
 
 	function main_menu() {

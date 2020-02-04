@@ -13,7 +13,7 @@ Template Name: Главная
 	<?php while( have_rows('slider2') ): the_row(); 
 		$image = get_sub_field('img');
 		?>
-		<div><img src="<?php echo $image ?>" alt=""></div>
+		<div style="background:url(<?php echo $image ?>);background-size: cover;background-position: center;background-repeat: no-repeat;"><img src="<?php echo $image ?>" alt=""></div>
 	<?php endwhile; ?>
 <?php endif; ?>
 </div>
@@ -25,9 +25,11 @@ Template Name: Главная
 </header>
 
 <div class="wrapper index">
-	<section class="sidebar"><img src="<?php echo get_template_directory_uri() ?>/assets/img/img-12.jpg" alt=""></section>
+	<section class="sidebar">
+	<h2 class="mobile_main_title">Слово командира</h2>
+	<img src="<?php echo get_template_directory_uri() ?>/assets/img/img-12.jpg" alt=""></section>
 	<section class="content">
-		<h2>Слово командира</h2>
+		<h2 class="desc_main_title">Слово командира</h2>
 		<p class="slovo_comandira">
             <?php the_field('slovo_comandira');?>
 			<img src="<?php the_field('foto_comandira')?>" alt="" class="paint photo_comamd"></p>

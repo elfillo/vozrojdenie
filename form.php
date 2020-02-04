@@ -3,7 +3,21 @@
 Template Name: Форма
 */
 ?>
-
+<style type="text/css">
+	header{
+		height: auto !important;
+		min-height: 215px;
+	}
+	header .image.pages_head{
+		display: none;
+	}
+	.wrapper-big .sidebar{
+		display: none;
+	}
+	.wrapper-big .content-form{
+		width: 100% !important;
+	}
+</style>
 <?php get_header( 'page' ); ?>
 
 	<div class="wrapper-big">
